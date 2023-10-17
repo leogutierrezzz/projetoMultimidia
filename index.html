@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My music</title>
+    <title>Café Gourmet</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="icon" href="cafes/favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <h1 class="titulo">Cafés Gourmet</h1>
     <div class="container">
-      <div class="bloco">
-        <span class="titulo-cafe">Espresso 
+      <div class="bloco cont-ani" id="bloco-espresso">
+        <span class="titulo-cafe ani">Espresso 
           <a href="#espresso">
             <img src="cafes/icone-cafe.png" class="descri-img">
           </a>
-          <a href="sites/deffect.html">
+          <a href="#video-espresso">
           <img src="cafes/video.png" class="descri-img">
           </a>
       </span>
@@ -29,9 +30,9 @@
         </div>
       </div>
 
-      <div class="bloco">
-        <span class="titulo-cafe">Cappuccino <a href="#cappuccino"><img src="cafes/icone-cafe.png" class="descri-img"></a>
-          <a href="sites/deffect.html">
+      <div class="bloco cont-ani" id="bloco-cappuccino">
+        <span class="titulo-cafe ani">Cappuccino <a href="#cappuccino"><img src="cafes/icone-cafe.png" class="descri-img"></a>
+          <a href="#video-cappuccino">
             <img src="cafes/video.png" class="descri-img">
             </a></span>
         <div class="img-cafe">
@@ -44,9 +45,9 @@
         </div>
       </div>
 
-      <div class="bloco">
-        <span class="titulo-cafe">Latte <a href="#latte"><img src="cafes/icone-cafe.png" class="descri-img"></a>
-          <a href="sites/deffect.html">
+      <div class="bloco cont-ani" id="bloco-latte">
+        <span class="titulo-cafe ani">Latte <a href="#latte"><img src="cafes/icone-cafe.png" class="descri-img"></a>
+          <a href="#video-latte">
             <img src="cafes/video.png" class="descri-img">
             </a></span>
         <div class="img-cafe">
@@ -59,9 +60,9 @@
         </div>
       </div>
 
-      <div class="bloco">
-        <span class="titulo-cafe">Macchiato <a href="#macchiato"><img src="cafes/icone-cafe.png" class="descri-img"></a>
-          <a href="sites/deffect.html">
+      <div class="bloco cont-ani" id="bloco-macchiato">
+        <span class="titulo-cafe ani">Macchiato <a href="#macchiato"><img src="cafes/icone-cafe.png" class="descri-img"></a>
+          <a href="#video-macchiato">
             <img src="cafes/video.png" class="descri-img">
             </a></span>
         <div class="img-cafe">
@@ -74,9 +75,9 @@
         </div>
       </div>
 
-      <div class="bloco">
-        <span class="titulo-cafe">Mocha <a href="#mocha"><img src="cafes/icone-cafe.png" class="descri-img"></a>
-          <a href="sites/deffect.html">
+      <div class="bloco cont-ani" id="bloco-mocha">
+        <span class="titulo-cafe ani">Mocha <a href="#mocha"><img src="cafes/icone-cafe.png" class="descri-img"></a>
+          <a href="#video-mocha">
             <img src="cafes/video.png" class="descri-img">
             </a></span>
         <div class="img-cafe">
@@ -89,11 +90,9 @@
         </div>
       </div>
 
-      <div class="bloco">
-        <span class="titulo-cafe">Brasileirinho <a href="#brasileirinho"><img src="cafes/icone-cafe.png" class="descri-img"></a>
-          <a href="sites/deffect.html">
-            <img src="cafes/video.png" class="descri-img">
-            </a></span>
+      <div class="bloco cont-ani" id="bloco-brasileirinho">
+        <span class="titulo-cafe ani">Brasileirinho <a href="#brasileirinho"><img src="cafes/icone-cafe.png" class="descri-img"></a>
+          </span>
         <div class="img-cafe">
             <img src="cafes/Brasileirinho.png" alt="" class="img-cafe"/>
         </div>
@@ -104,6 +103,7 @@
         </div>
       </div>
     </div>
+    <section id="produtos">
       <h1 class="titulo" id="titulo-produtos">Produtos</h1>
       <div class="container-slider">
       <div id="slider">
@@ -115,6 +115,8 @@
         <img src="cafes/Machi.png" alt="">
       </div>
     </div>
+  </section>
+  <section id="descricao">
     <h1 class="titulo" id="espresso">Expresso</h1>
     <div class="container-item">
       <div class="item-sobre">
@@ -181,6 +183,59 @@
         </div>
       </div>
     </div>
+  </section>
+  <section id="videos">
+    <h1 class="titulo" id="video-espresso">Expresso</h1>
+    <div class="container-item">
+      <div class="item-sobre">
+        <div class="item-dentro">
+          <div class="container-video">
+            <video class="video" src="/videos/espresso.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="titulo" id="video-cappuccino">Cappucino</h1>
+    <div class="container-item">
+      <div class="item-sobre">
+        <div class="item-dentro">
+          <div class="container-video">
+            <video class="video" src="/videos/cappuccino.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="titulo" id="video-latte">Latte</h1>
+    <div class="container-item">
+      <div class="item-sobre">
+        <div class="item-dentro">
+          <div class="container-video">
+            <video class="video" src="/videos/latte.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="titulo" id="video-macchiato">Macchiato</h1>
+    <div class="container-item">
+      <div class="item-sobre">
+        <div class="item-dentro">
+          <div class="container-video">
+            <video class="video" src="/videos/macchiato.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="titulo" id="video-mocha">Mocha</h1>
+    <div class="container-item">
+      <div class="item-sobre">
+        <div class="item-dentro">
+          <div class="container-video">
+            <video class="video" src="/videos/mocha.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
       <script src="script.js"></script>
   </body>
 </html>

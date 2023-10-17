@@ -176,3 +176,20 @@ html{
     width: 480px;
     height: 300px;
 }
+
+.ani{
+    transition: .10s;
+    cursor: pointer;
+}
+
+.cont-ani:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+#produtos, #descricao, #videos, 
+#bloco-espresso, #bloco-cappuccino,
+#bloco-latte, #bloco-macchiato,
+#bloco-mocha, #bloco-brasileirinho {
+    visibility: hidden;
+}
